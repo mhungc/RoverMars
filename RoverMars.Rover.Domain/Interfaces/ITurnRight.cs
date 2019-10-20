@@ -6,5 +6,6 @@ namespace RoverMars.Rover.Domain.Interfaces
 {
     public interface ITurnRight
     {
+        MarsOrientations TurnRight(MarsOrientations roverOrientation);
     }
 }

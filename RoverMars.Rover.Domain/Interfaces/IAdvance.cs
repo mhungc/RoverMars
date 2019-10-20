@@ -6,5 +6,6 @@ namespace RoverMars.Rover.Domain.Interfaces
 {
     public interface IAdvance
     {
+        Position TurnAdvance(Position roverPosition, MarsOrientations roverOrientation);
     }
 }
