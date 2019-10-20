@@ -57,8 +57,12 @@ namespace RoverMars
                 var square = new MarsSquare(squareSize, roverVechicle);
 
                 square.ExcecuteCommand(commands);
+                Console.WriteLine("");
+                Console.WriteLine("");
                 Console.WriteLine("************* Rover Report: **************");
                 Console.WriteLine(square.ToString());
+                Console.WriteLine("");
+                Console.WriteLine("");
                 Console.WriteLine("************* Rover playing in Mars! **************");
                 Console.WriteLine("***************************************************");
                 Console.WriteLine("***************************************************");
