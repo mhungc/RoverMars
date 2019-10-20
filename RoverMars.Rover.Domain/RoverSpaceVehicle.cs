@@ -23,7 +23,20 @@ namespace RoverMars.Rover.Domain
 
         public override void ProcessCommand(char command)
         {
-            throw new NotImplementedException();
+            switch (command)
+            {
+                case 'L':
+                    PerformTurnLeft();
+                    break;
+                case 'R':
+                    PerfomTurnRight();
+                    break;
+                case 'A':
+                    PerformAdvance();
+                    break;
+                default:
+                    throw new ArgumentException(string.Format("Invalid value: {0}", command));
+            }
         }
     }
 }
