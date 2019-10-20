@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoverMars.Mars.Domain", "..
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoverMars.Rover.Domain", "..\RoverMars.Rover.Domain\RoverMars.Rover.Domain.csproj", "{D000EA48-FBAD-46B0-9D36-914FE66C95AB}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoverInMars.Rover.UnitTest", "..\RoverInMars.UnitTest\RoverInMars.Rover.UnitTest.csproj", "{841ED561-81AA-4ED9-B932-FEB659FC87E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D000EA48-FBAD-46B0-9D36-914FE66C95AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D000EA48-FBAD-46B0-9D36-914FE66C95AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D000EA48-FBAD-46B0-9D36-914FE66C95AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{841ED561-81AA-4ED9-B932-FEB659FC87E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{841ED561-81AA-4ED9-B932-FEB659FC87E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{841ED561-81AA-4ED9-B932-FEB659FC87E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{841ED561-81AA-4ED9-B932-FEB659FC87E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

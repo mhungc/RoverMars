@@ -4,4 +4,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RoverMars.Rover.Domain\RoverMars.Rover.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
