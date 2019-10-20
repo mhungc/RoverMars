@@ -27,12 +27,30 @@ namespace RoverInMars.UnitTest
         public void RoverTurnLeft_ShouldReturnTheCorrespondentOrientationDependingHisActualOrientation(MarsOrientations roverActualOrientation, MarsOrientations roverFinalOrientation)
         {
             var stub = new RoverSpaceVehicle(
-                new TurnLeftInMars()
-                , new TurnRightInMars()
-                , new AdvanceInMars()
+                _turnLeftAlgorithm
+                , _turnRightAlgorithm
+                , _advanceAlgorithm
                 , roverActualOrientation);
 
             stub.PerformTurnLeft();
+
+            Assert.Equal(roverFinalOrientation, stub._roverOrientationsInMars);
+        }
+
+        [Theory]
+        [InlineData(MarsOrientations.N, MarsOrientations.E)]
+        [InlineData(MarsOrientations.E, MarsOrientations.S)]
+        [InlineData(MarsOrientations.S, MarsOrientations.W)]
+        [InlineData(MarsOrientations.W, MarsOrientations.N)]
+        public void RoverTurnRight_ShouldReturnTheCorrespondentOrientationDependingHisActualOrientation(MarsOrientations roverActualOrientation, MarsOrientations roverFinalOrientation)
+        {
+            var stub = new RoverSpaceVehicle(
+               _turnLeftAlgorithm
+                , _turnRightAlgorithm
+                , _advanceAlgorithm
+                , roverActualOrientation);
+
+            stub.PerfomTurnRight();
 
             Assert.Equal(roverFinalOrientation, stub._roverOrientationsInMars);
         }
